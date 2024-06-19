@@ -1,0 +1,141 @@
+@media screen and (max-width:690px) {
+
+    body {
+        display: grid;
+        grid-template: auto 2fr 1fr 80px / 1fr ;
+    }
+    
+    header {
+        color: #ffffff;
+        padding: 1rem;
+        grid-column: 1 / 2;
+    }
+    
+    h1 {
+        box-sizing: border-box;
+        text-align: center;
+        background-color: rgb(15, 138, 172);
+        margin: 0;
+        padding: 1rem 0;
+    }
+    
+    nav {
+        max-width: 100vw;
+    }
+    
+    .menu a {
+        flex: 1 1 100%;
+    }
+    
+    .navigation {
+        list-style: none;
+        display: flex;
+        flex-direction:row;
+        background-color: rgb(10, 59, 72);
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navigation a {
+        display: block;
+        color: #ffffff;
+        padding: 0.75rem;
+        text-decoration: none;
+        text-align: center;
+        font-size: larger;
+    }
+    
+    .navigation a:hover {
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-color: rgb(238, 17, 1);
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        background: rgb(255, 255, 255);
+        border: 20px 2px 2px 2px  solid rgb(15, 138, 172);
+        border-radius: 20px;
+        margin: 5px 0;
+        padding: 1rem;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    main::before {
+        content: "About Me";
+        position: absolute;
+        top: -35px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    
+    .card1, .card2 {
+        position: relative;
+        padding: 20px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card1 img, .card2 img {
+        max-width: 100%;
+        display: block;
+        border-radius: 15%;
+        margin: 10px 0;
+    }
+    
+    .card1 p, .card2 p, .card2 h2 {
+        color: #000000;
+        text-decoration: none;
+        text-align: center;
+        font-size: x-large;
+    }
+    
+    .right-sidebar {
+        position: relative;
+        background: rgb(255, 255, 255);
+        border: 20px 2px 2px 2px solid rgb(15, 138, 172);
+        border-radius: 20px;
+        margin: 5px 0;
+        padding: 1rem;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    .right-sidebar::before {
+        content: "Web Dev Resources";
+        position: absolute;
+        top: -35px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    
+    footer {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        background: rgb(15, 138, 172);
+        color: #ffffff;
+        padding: 1rem;
+        font-size: x-large;
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        justify-content: center;
+    }
+    
+    
+}
