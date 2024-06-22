@@ -1,0 +1,14 @@
+nav ul {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    font-size: xx-large;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
