@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Germany</title>
+    <link rel="stylesheet" href="style/place.css">
+</head>
+<body>
+    <header>
+        <h1>Germany</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/germany-small.webp">
+                    <source media="(max-width: 1000px)" srcset="images/germany.webp">
+                    <img src="images/germany-large.webp" alt="Germany" width="1200" height="500">
+                </picture>
+            </picture>
+        </section>
+        <section class="weather">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <label for="temperature-input">Temperature (°C): </label>
+            <input type="number" id="temperature-input" value="5">
+            <br>
+            <label for="wind-speed-input">Wind Speed (km/h): </label>
+            <input type="number" id="wind-speed-input" value="10">
+            <br>
+            <button id="calculate-button">Calculate Wind Chill</button>
+            <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span></p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+    <script src="script/place.js" defer></script>
+</body>
+</html>
