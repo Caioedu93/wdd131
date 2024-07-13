@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(30deg, #01aefe, #fff652);
+    color: white;
+    padding: 1em;
+    font-size: xx-large;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 1em;
+    margin: 1em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1em;
+}
+
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.rating {
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: start;
+    font-size: x-large;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2em;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.rating input:checked ~ label {
+    color: #ff0;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #ff0;
+}
+
+#installDate{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: start;
+    font-size: large;
+    width: 100%;
+}
+
+.features {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    font-size: x-large;
+    
+}
+.features label{
+    padding-right: 2rem;
+    padding-left: 2rem;
+    width: 100%;
+}
+
+.features input {
+    margin-top: 0.5em;
+}
+
+input[type="submit"] {
+    padding: 1em;
+    margin-top: 1em;
+    background-color: #0076ac;
+    font-size: x-large;
+    color: #fff200;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #fff200;
+    color: #0076ac;
+}
+
+footer {
+    background: linear-gradient(30deg, #01aefe, #fff652);
+    color: white;
+    padding: 1em;
+    font-size: larger;
+    text-align: center;
+    margin-top: 2em;
+}
