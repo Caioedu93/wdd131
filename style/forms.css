@@ -7,7 +7,7 @@ body {
 
 header {
     background: linear-gradient(30deg, #01aefe, #fff652);
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 1em;
     font-size: xx-large;
     text-align: center;
@@ -63,7 +63,7 @@ select {
 
 .rating label {
     font-size: 2em;
-    color: #ccc;
+    color: #000000;
     cursor: pointer;
 }
 
@@ -119,7 +119,7 @@ input[type="submit"]:hover {
 
 footer {
     background: linear-gradient(30deg, #01aefe, #fff652);
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 1em;
     font-size: larger;
     text-align: center;
