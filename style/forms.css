@@ -125,3 +125,49 @@ footer {
     text-align: center;
     margin-top: 2em;
 }
+
+@media (max-width: 600px) {
+    header {
+        font-size: large;
+        padding: 0.5em;
+    }
+
+    main {
+        margin: 0.5em;
+        padding: 0.5em;
+    }
+
+    p {
+        font-size:x-large;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rating {
+        font-size: large;
+    }
+
+    #installDate {
+        font-size: medium;
+    }
+
+    .features {
+        flex-direction: column;
+        font-size: large;
+    }
+
+    .features label {
+        padding: 0;
+        width: auto;
+    }
+
+    input[type="submit"] {
+        font-size: large;
+        padding: 0.5em;
+    }
+
+    footer {
+        font-size: medium;
+        padding: 0.5em;
+    }
+}
