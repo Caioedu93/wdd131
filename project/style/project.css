@@ -1,0 +1,278 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 300px 1fr 90px;
+    width: 99vw;
+    height: 100vh;
+}
+
+header {
+    grid-column: 1 / 4;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #000000;
+    border-left: 20px solid #e01c29; 
+    border-right: 20px solid #e01c29;
+    margin: 0;
+    padding: 0;
+    font-size: x-large;
+    text-align: center;
+    z-index: 1;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 470px;
+    width: 20px; 
+    background-color: white;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 20px;
+    height: 470px;
+    width: 20px;
+    background-color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: right;
+}
+
+.logo img {
+    max-height: 200px;
+}
+
+.navigation {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li {
+    margin-left: 20px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navigation ul li a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 17, 0);
+}
+
+.left, .right {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.left .row:nth-child(1), .right .row:nth-child(1) {
+    background-color: white;
+    z-index: -1;
+}
+
+.left .row:nth-child(2), .right .row:nth-child(2) {
+    background-color: #000000;
+    overflow: hidden;
+    box-shadow: 0 4px 4px rgb(0, 0, 0);
+}
+
+.left .row:nth-child(3), .right .row:nth-child(3) {
+    background-color: white;
+}
+
+.left .row:nth-child(4), .right .row:nth-child(4) {
+    background-color: #e01c29;
+    overflow: hidden;
+    box-shadow: 0 4px 4px rgb(0, 0, 0);
+}
+
+.left .row:nth-child(5), .right .row:nth-child(5) {
+    background-color: white;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px; 
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    text-align: center;
+    width: 100%;
+    
+}
+
+
+.hero-content {
+    background-color: white;
+    padding: 20px;
+    
+}
+
+.matches {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.match-schedule {
+    display: flex;
+    flex-direction: column;
+}
+
+.match {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+main {
+    padding: 20px;
+    grid-column: 2;
+    font-size: larger;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+
+figure {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    padding: 10px;
+}
+
+footer {
+    grid-column: 1 / 4;
+    padding: 20px;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border-left: 25px solid #e01c29;
+    border-right: 25px solid #e01c29;
+}
+
+.contact-info, .social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+
+.social-links a {
+    text-decoration: none; 
+    z-index: 1;
+    background-size: cover;
+    margin: 2px;
+    padding: 5px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .matches {
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+    .match img {
+        max-width: 30px;
+    }
+
+    .match-schedule {
+        flex-direction: column;
+    }
+
+    .match {
+        padding: 5px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navigation ul li {
+        margin: 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .navigation ul li a {
+        padding: 10px;
+        display: block;
+    }
+
+}
